@@ -1,0 +1,47 @@
+/* Title Section */
+h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Timeline Column with Vertical Line */
+  .timeline {
+    text-align: right;
+    font-style: italic;
+    color: gray;
+    position: relative;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 100%;
+    width: 1px;
+    height: calc(100% + 40px); /* Adjust height depending on spacing */
+    background-color: red; /* Customize line color */
+  }
+  
+  /* Job Entry Section */
+  .job-entry {
+    margin: 2rem 0;
+    position: relative;
+  }
+  
+  .job-entry h3 {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .job-entry p {
+    margin: 0.2rem 0;
+  }
+  
+  hr {
+    border: 1px solid lightgray;
+  }
+  
