@@ -44,4 +44,6 @@ h1 {
   hr {
     border: 1px solid lightgray;
   }
-  
+  .more_details_class{
+    margin-top: 12px;
+  }

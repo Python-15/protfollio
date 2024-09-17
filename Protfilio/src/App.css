@@ -1,15 +1,29 @@
 .left_pannel_container {
   display: flex;
-  gap: 21px;
   align-items: flex-start;
-  overflow-y: hidden
+  overflow-y: hidden;
+ 
 }
 .about_section_container {
   margin-inline-start: 5px;
     width: 38%;
     max-width: fit-content;
     max-height: fit-content;
-    overflow-y: hidden;
+   
     overflow-x: hidden;
+    z-index: 5;
+}
+.header_section{
+  overflow-y: auto;
+  height: 96vh;
+  margin-top: 17px;
+  
 }
 
+/* @media (max-width: 768px) {
+  .left_pannel_container{
+    display: flex;
+    flex-direction: column;
+}
+  
+} */

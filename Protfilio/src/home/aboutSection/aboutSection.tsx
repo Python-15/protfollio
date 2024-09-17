@@ -1,9 +1,7 @@
-
-
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
 
-import "./style.css"
+import "./style.css";
 
 export function Sidebar() {
   const container = {
@@ -17,46 +15,13 @@ export function Sidebar() {
       },
     },
   };
-  const iconList = [
-    {
-      component: "",
-      href: "https://github.com/",
-    },
-    {
-      component: "",
-      href: "",
-    },
-    {
-      component: "",
-      href: "",
-    },
-    {
-      component: "",
-      href: "",
-    },
-    {
-      component: "",
-      href: "",
-    },
-  ];
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
 
   return (
     <div className="sidebar">
       <div className="image_conatiner"></div>
-      <img src="src\images\adiee2.png" alt="" />
+      <img className="profile_pic" src="src\images\adiee2.png" alt="" />
       <div className="name_container">
-        <h4>
-          <Link smooth to="/#start" className="h1_links">
-            Aaditya Kumar
-          </Link>
-        </h4>
+        <h4>Aaditya Kumar</h4>
         <p>Software engineer</p>
       </div>
 
@@ -71,7 +36,11 @@ export function Sidebar() {
           </Link>
         </li>
         <li className="sidebar-nav-items">
-          <Link smooth to="https://drive.google.com/file/d/1yy4ajKppeqLtPLcI-ZiOD9nhWz7FtggA/view?usp=drive_link" className="links">
+          <Link
+            smooth
+            to="https://drive.google.com/file/d/1yy4ajKppeqLtPLcI-ZiOD9nhWz7FtggA/view?usp=drive_link"
+            className="links"
+          >
             Resume
           </Link>
         </li>
@@ -83,19 +52,7 @@ export function Sidebar() {
           variants={container}
           initial="hidden"
           animate="visible"
-        >
-          {iconList.map((val, index) => (
-            <motion.li key={index} variants={item}>
-              <img
-                onClick={() => {
-                  window.open(val.href, "_blank");
-                }}
-                src={val.component}
-                className="icon-img"
-              />
-            </motion.li>
-          ))}
-        </motion.ul>
+        ></motion.ul>
       </div>
       <div
         style={{
@@ -105,7 +62,19 @@ export function Sidebar() {
         }}
         className="tagtop"
       ></div>
-      <footer></footer>
+      <footer className="footer_sidebar">
+        <a className="footer-linkgmail" href="mailto: raaz.aditya15@gmail.com">
+          <img className="github_icon" src="src\images\new.png"></img>
+        </a>
+
+        <a className="footer-link" href="https://www.linkedin.com/">
+          <img className="github_icon" src="src\images\linkedin.png"></img>
+        </a>
+        <a className="footer-link" href="https://github.com/Python-15">
+          <img className="github_icon" src="src\images\github.png"></img>
+        </a>
+        <p>© Aaditya.</p>
+      </footer>
     </div>
   );
 }

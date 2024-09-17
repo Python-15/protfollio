@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./home.css"; // Assuming you are using an external CSS file
 import { Container, Row, Col, Button } from "react-bootstrap";
 import TechStacks from "../helper/helper";
@@ -19,11 +19,10 @@ const Portfolio = () => {
           </p>
           <p>
             <strong>
-              I am looking for a Full Time Opportunity as a Software
+              I am looking for a Full Time Opportunity as a Software Developer
              
             </strong>
             <br />
-            Contact me. I will answer you in ~24 hours.
           </p>
         </Col>
       </Row>
@@ -46,7 +45,7 @@ const Portfolio = () => {
             codebases, implementing <strong> AWS Lambda functions</strong>
           </p>
           <p> {<TechStacks/>}</p>
-          <Button variant="danger">More details</Button>
+          <Button className="more_details_class" variant="outline-secondary" href="https://www.powerschool.com/">Know More</Button>
         </Col>
       </Row>
 
@@ -102,7 +101,7 @@ const Portfolio = () => {
             <strong>Error Handling:</strong> Created error component that is
             used in the application to display or toast errors.
           </li>
-          <Button variant="danger">More details</Button>
+          <Button className="more_details_class" variant="outline-secondary"href="https://www.powerschool.com/">Know More </Button>
         </Col>
       </Row>
     </Container>

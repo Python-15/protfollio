@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Aclonica&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400&display=swap");
 .sidebar {
-  width: 100%;
+  width: 69%;
   background-color: #323337;
   overflow-y: hidden;
   text-align: center;
   padding-top: 40px;
   margin-inline-end: 379px;
   color: aliceblue;
+  /* Fixes the sidebar on the screen */
+  top: 0;
+
+  height: 100vh; /* Ensures the sidebar covers the full height of the screen */
 }
 .sidebar > h1 {
-   padding-top: 26px;
+  padding-top: 26px;
   text-align: center;
 }
 .topHashtag {
@@ -20,12 +24,9 @@
 
 .h1_links {
   text-decoration: none;
-  font-family: 'Aclonica', sans-serif;
-  color:aliceblue;
+  font-family: "Aclonica", sans-serif;
+  color: aliceblue;
   font-size: 32px;
-}
-.h1_links:hover {
-  color: #333;
 }
 
 .sidebar > p {
@@ -45,7 +46,19 @@
 ul {
   list-style: none;
 }
-
+.profile_pic {
+  vertical-align: middle;
+  border-radius: 156px;
+  width: 189px;
+  margin-bottom: 30px;
+}
+.github_icon {
+  vertical-align: middle;
+  width: 37px;
+  gap: 10px;
+  flex-direction: column-reverse;
+  margin-inline-end: 9px;
+}
 .links {
   background-image: linear-gradient(to right, #000, #000, #000);
   background-size: 200% 100%;
@@ -54,7 +67,7 @@ ul {
   padding: 5px 0;
   position: relative;
   text-decoration: none;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   font-size: larger;
   line-height: 1.4rem;
   -webkit-background-clip: text;
@@ -63,7 +76,7 @@ ul {
 }
 
 .links:before {
-  content: '';
+  content: "";
   background: linear-gradient(
     to right,
     rgba(255, 0, 0, 1),
@@ -109,7 +122,8 @@ ul {
 /*//////////////media ////////////////////*/
 @media (max-width: 980px) {
   .sidebar {
-    width: 106vw;
+    width: 36vw;
+    overflow-y: auto;
   }
   .h1_links {
     font-size: 29px;
@@ -119,6 +133,7 @@ ul {
 @media (max-width: 768px) {
   .sidebar {
     width: 106vw;
+    margin-inline-end: 612px;
   }
   .h1_links {
     font-size: 28px;
