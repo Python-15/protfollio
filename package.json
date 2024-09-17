@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "aaditya",
+    "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "clean": "rm -rf dist"
   },
   "dependencies": {
@@ -36,4 +36,5 @@
     "vite": "^5.4.1"
   },
   "homepage": "https://python-15.github.io/protfollio/"
+
 }
