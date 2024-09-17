@@ -1,6 +1,9 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
-
+import adiee2 from './images/adiee2.png';
+import newIcon from './images/new.png';
+import linkedinIcon from './images/linkedin.png';
+import githubIcon from './images/github.png';
 import "./style.css";
 
 export function Sidebar() {
@@ -19,7 +22,7 @@ export function Sidebar() {
   return (
     <div className="sidebar">
       <div className="image_conatiner"></div>
-      <img className="profile_pic" src="src\images\adiee2.png" alt="" />
+      <img className="profile_pic" src={adiee2} alt="" />
       <div className="name_container">
         <h4>Aaditya Kumar</h4>
         <p>Software engineer</p>
@@ -64,17 +67,18 @@ export function Sidebar() {
       ></div>
       <footer className="footer_sidebar">
         <a className="footer-linkgmail" href="mailto: raaz.aditya15@gmail.com">
-          <img className="github_icon" src="src\images\new.png"></img>
+          <img className="github_icon" src={newIcon} alt="" />
         </a>
 
         <a className="footer-link" href="https://www.linkedin.com/">
-          <img className="github_icon" src="src\images\linkedin.png"></img>
+          <img className="github_icon" src={linkedinIcon} alt="" />
         </a>
         <a className="footer-link" href="https://github.com/Python-15">
-          <img className="github_icon" src="src\images\github.png"></img>
+          <img className="github_icon" src={githubIcon} alt="" />
         </a>
-        <p>© Aaditya.</p>
-      </footer>
+        <p></p>
+        
+        </footer><p>© Aaditya.</p>
     </div>
   );
 }
