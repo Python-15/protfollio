@@ -41,7 +41,7 @@ export function Sidebar() {
         <li className="sidebar-nav-items">
           <Link
             smooth
-            to="https://drive.google.com/file/d/1yy4ajKppeqLtPLcI-ZiOD9nhWz7FtggA/view?usp=drive_link"
+            to="https://drive.google.com/file/d/1vUqQJN4VXb7nEW7V2Vyf18CqDUX4-z_1/view?usp=sharing"
             className="links"
           >
             Resume
@@ -70,7 +70,7 @@ export function Sidebar() {
           <img className="github_icon" src={newIcon} alt="" />
         </a>
 
-        <a className="footer-link" href="https://www.linkedin.com/">
+        <a className="footer-link" href="https://www.linkedin.com/in/aaditya-15/">
           <img className="github_icon" src={linkedinIcon} alt="" />
         </a>
         <a className="footer-link" href="https://github.com/Python-15">
